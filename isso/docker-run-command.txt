@@ -1,0 +1,4 @@
+docker run --env UID=4242 --env GID=4242 -p 8080:8080 -v $(pwd)/config/isso.conf:/isso/config/isso.conf -v $(pwd)/database:/isso/database angristan/isso:0.12.2
+
+For Integrating with Hugo:
+https://stiobhart.net/2017-02-24-isso-comments/#_local_add_isso_code_to_hugo

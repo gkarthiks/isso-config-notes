@@ -1,0 +1,16 @@
+version: '2.3'
+
+services:
+  isso:
+    container_name: isso
+    image: angristan/isso:0.12.2
+    restart: always
+    ports:
+      - "127.0.0.1:8080:8080"
+    volumes:
+      - ./config:/isso/config
+      - ./database:/isso/database
+    environment:
+     - UID=4242
+     - GID=4242
+
