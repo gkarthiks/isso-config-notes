@@ -1,0 +1,6 @@
+modules:
+  - github.com/gkarthiks/k8s-discovery@v0.18.4
+replace:
+  - github.com/gkarthiks/k8s-discovery=/Users/gkarthiks/k8s-discovery
+docker:
+  from: alpine
